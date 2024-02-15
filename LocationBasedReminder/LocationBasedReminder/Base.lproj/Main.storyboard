@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MY Current Location-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocationBasedReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rF9-qY-usQ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="671"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1E-MC-n6v">
+                                <rect key="frame" x="16" y="753" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Reminder for this"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rF9-qY-usQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6QI-Zy-o7i"/>
+                            <constraint firstItem="f1E-MC-n6v" firstAttribute="top" secondItem="rF9-qY-usQ" secondAttribute="bottom" constant="23" id="AB7-07-80Y"/>
+                            <constraint firstItem="rF9-qY-usQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CkL-5g-hgI"/>
+                            <constraint firstItem="f1E-MC-n6v" firstAttribute="top" secondItem="rF9-qY-usQ" secondAttribute="bottom" constant="23" id="DWd-pI-O6M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f1E-MC-n6v" secondAttribute="trailing" constant="16" id="OBi-29-DQ6"/>
+                            <constraint firstItem="rF9-qY-usQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Pwd-ax-ZNl"/>
+                            <constraint firstItem="f1E-MC-n6v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QSx-tM-phG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f1E-MC-n6v" secondAttribute="bottom" constant="30" id="lLo-3f-joa"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MY Current Location" id="XvV-o9-puk"/>
+                    <connections>
+                        <outlet property="mapView" destination="rF9-qY-usQ" id="oly-Ni-FJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+</document>
