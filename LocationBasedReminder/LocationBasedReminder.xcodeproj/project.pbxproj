@@ -15,6 +15,8 @@
 		0B7F6E9D2B7E94C400076FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F6E9C2B7E94C400076FC6 /* Assets.xcassets */; };
 		0B7F6EA02B7E94C400076FC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F6E9E2B7E94C400076FC6 /* LaunchScreen.storyboard */; };
 		0B7F6EA92B7E9A1100076FC6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7F6EA82B7E9A1100076FC6 /* MapKit.framework */; };
+		0B7F6EAB2B7EB40700076FC6 /* VisitedLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F6EAA2B7EB40700076FC6 /* VisitedLocations.swift */; };
+		0B7F6EAD2B7EB6F500076FC6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F6EAC2B7EB6F500076FC6 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0B7F6E9F2B7E94C400076FC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B7F6EA12B7E94C400076FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B7F6EA82B7E9A1100076FC6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0B7F6EAA2B7EB40700076FC6 /* VisitedLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedLocations.swift; sourceTree = "<group>"; };
+		0B7F6EAC2B7EB6F500076FC6 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				0B7F6E9E2B7E94C400076FC6 /* LaunchScreen.storyboard */,
 				0B7F6EA12B7E94C400076FC6 /* Info.plist */,
 				0B7F6E992B7E94C100076FC6 /* LocationBasedReminder.xcdatamodeld */,
+				0B7F6EAA2B7EB40700076FC6 /* VisitedLocations.swift */,
+				0B7F6EAC2B7EB6F500076FC6 /* DataStore.swift */,
 			);
 			path = LocationBasedReminder;
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7F6EAB2B7EB40700076FC6 /* VisitedLocations.swift in Sources */,
+				0B7F6EAD2B7EB6F500076FC6 /* DataStore.swift in Sources */,
 				0B7F6E9B2B7E94C100076FC6 /* LocationBasedReminder.xcdatamodeld in Sources */,
 				0B7F6E952B7E94C100076FC6 /* ViewController.swift in Sources */,
 				0B7F6E912B7E94C100076FC6 /* AppDelegate.swift in Sources */,
